@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Eval.DOM.css">
+    <title>Eval_DOM</title>
+
+</head>
+
+<body>
+
+
+    <!-- BARRE DE NAVIGATION DE LA PAGE -->
+    <header class="header">
+        <button onclick="abracadabra()" class="clic">CLIC !</button>
+        <div id="monMenu" class="dropmenu">
+            <a onclick="deroule(event, 'un')" class="Menu">Menu1</a>
+            <a onclick="deroule(event, 'deux')" class="Menu">Menu 2</a>
+            <a onclick="deroule(event, 'trois')" class="Menu">Menu 3</a>
+            <a onclick="deroule(event, 'quatre')" class="Menu">Menu 4</a>
+            <a onclick="deroule(event, 'cinq')" class="Menu">Menu 5</a>
+        </div>
+    </header>
+    <br>
+
+
+    <!-- LES CINQ MENUS DEROULANTS -->
+    <div id="myContainer" class="container">
+
+
+
+        <!-- LE PREMIER MENU -->
+        <div class="onglet" id="un">
+            <h5>Passe ta souris sur le tableau<h3>
+                    <br>
+                    <table id="tableau">
+                        <tr>
+                            <th><a onmouseover="show();" onmouseout="hide();">IMAGE 1</a></th>
+                            </br>
+                            <img id="image" style="display:none;"
+                                src="C:\Users\maxim\OneDrive\Documents\Fichiers VScode\Cours BeWeb\Javascript\Eval_JS\butterflies-3205038__340.jpg" />
+                            </br>
+                            <th><a onmouseover="show2();" onmouseout="hide2();">IMAGE 2</a></th>
+                            </br>
+                            <img id="image2" style="display:none;"
+                                src="C:\Users\maxim\OneDrive\Documents\Fichiers VScode\Cours BeWeb\Javascript\Eval_JS\butterfly-1829404__340.jpg" />
+                            </br>
+                            <th><a onmouseover="show3();" onmouseout="hide3();">IMAGE 3</a></th>
+                            </br>
+                            <img id="image3" style="display:none;"
+                                src="C:\Users\maxim\OneDrive\Documents\Fichiers VScode\Cours BeWeb\Javascript\Eval_JS\DSC_1307ab.jpg" />
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+        </div>
+
+
+
+        <!-- LE DEUXIEME MENU -->
+        <div class="onglet" id="deux">
+            <p>
+
+                <input for="name" id="name" type="text" placeholder="Votre nom ">
+                <input for="surname" id="surname" type="text" placeholder="Votre prénom">
+
+
+                <input type="button" id="go" value="BOUTON"></input>
+
+            <section id="resultat"></section>
+
+
+            </p>
+        </div>
+
+
+
+
+        <!-- LE TROISIEME MENU -->
+        <div class="onglet" id="trois">
+
+            <div class="onglet3">
+
+                <p>Voici un menu déroulant:</p>
+
+                <button class="dropbtn">MENU DEROULANT
+                    <ul class="dropdown-content">
+                        <a href="#" onclick="chg('textemodif');">MODIFICATION 1</a>
+                        <a href="#" onclick="chg2('textemodif');">MODIFICATION 2</a>
+                        <a href="#" onclick="chg3('textemodif');">MODIFICATION 3</a>
+                    </ul>
+                </button>
+                <br>
+                <br>
+                <br>
+                <p id="textemodif">
+                    Aut accusantium ratione
+                    eos reprehenderit magnam
+                    sed architecto deserunt
+                    deleniti veniam. Qui
+                    pariatur quasi ut dolor
+                    dolores a repudiandae
+                    ipsa est quia quia in
+                    blanditiis exercitationem Aut accusantium ratione
+                    eos reprehenderit magnam
+                    sed architecto deserunt
+                    deleniti veniam. Qui
+                    pariatur quasi ut dolor
+                    dolores a repudiandae
+                    ipsa est quia quia in
+                    blanditiis exercitationem
+                </p>
+            </div>
+        </div>
+
+
+
+        <!-- LE QUATRIEME MENU ET LES CHIFFRES QUI CHANGENT  */-->
+
+
+        <div class="onglet" id="quatre">
+            <p>Cliquer pour modifier l'ordre des valeurs</p>
+
+
+            <button id="btnDown">Go down</button>
+            <button id="btnUp">Go Up</button>
+
+            <br />
+
+            <div id="parent">
+                <div id="div0"> div0 </div>
+                <div id="div1"> div1 </div>
+                <div id="div2"> div2 </div>
+                <div id="div3"> div3 </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- LE CINQUIEME MENU
+        <div class="onglet" id="cinq">
+            <p>onglet 5</p>
+        </div> -->
+    </div>
+
+
+    </div>
+</body>
+
+<script src="Eval.DOM.js" ></script>
+
+</html>

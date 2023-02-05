@@ -1,0 +1,156 @@
+header {
+  /* border:2px red solid; */
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: #B3DEE5;
+}
+
+/* pour  le bouton à gauche de la nav: */
+button {
+  background-color: #FFA101;
+  color: black;
+  width: 10%;
+  height: 35px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+
+
+
+/* LES CINQ MENUS DE LA NAV*/
+
+div.dropmenu {
+  display: none;
+  /* le display ci-dessus cache les menu au démarrage de la page*/
+}
+
+div.dropmenu a {
+  display: inline-block;
+  color: black;
+  background-color: #FFA101;;
+  border: 2px solid black;
+  margin: 20px;
+
+}
+
+div.dropmenu a:hover {
+  /*change la couleur des menus lors du passage de la souris */
+  background-color: #777;
+}
+
+
+
+
+
+/* LE CONTAINER DANS LEQUEL SERONT PRESENTES LES CINQ ONGLETS */
+
+.container {
+  background-color: #B3DEE5;;
+}
+
+
+
+
+/* LES CINQ ONGLETS CONTENANT LES EXERCICES */
+
+.onglet {
+  display: none;
+  height: 500px;
+  border: 1px solid black;
+  border-top: none;
+  font-size: 20px;
+}
+
+
+
+
+/* LE PREMIER ONGLET ET SON TABLEAU */
+
+#tableau {
+  border: 2px solid black;
+  background-color: lightgray;
+  color: black;
+  table-layout: auto;
+  width: 50%;
+}
+
+#tableau tr,
+#tableau td,
+#tableau th {
+  border: 1px solid black;
+}
+
+
+
+
+
+/* LE TROISIEME ONGLET ET SON MENU DEROULANT */
+
+.dropbtn {
+  background-color: grey;
+  color: black;
+  height: 50px;
+  width: 150px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.onglet3 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgray
+}
+
+.onglet3:hover .dropdown-content {
+  display: block;
+}
+
+.onglet3:hover .dropbtn {
+  background-color: lightgray;
+}
+
+
+
+
+/* LE QUATRIEME ONGLET ET LES VALEURS QUI CHANGENT  */
+
+#btnUp , #btnDown {
+height: 20px;
+width: 100px;
+}
+
+#parent {
+  height: 100px;
+  width: 30%;
+border: solid 2px black;
+}
+
+#div0 {
+  background-color: grey;
+}
